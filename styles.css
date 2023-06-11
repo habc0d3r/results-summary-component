@@ -19,16 +19,15 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
   box-shadow: 10px 10px 50px hsl(221, 100%, 96%);
-
-  /* Card */
-  .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
+/* Card */
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Styles for card-left */
 
 .card-left {
@@ -39,151 +38,154 @@ body {
   );
   border-radius: 30px;
   padding: 30px;
+}
 
-  .title-left {
-    font-size: 1.3rem;
-    color: hsl(241, 100%, 89%);
-  }
+.title-left {
+  font-size: 1.3rem;
+  color: hsl(241, 100%, 89%);
+}
 
-  .final-score {
-    background: linear-gradient(
-      to bottom,
-      hsla(256, 72%, 46%, 1),
-      hsla(241, 72%, 46%, 0)
-    );
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 40px;
-    margin: 30px;
-  }
+.final-score {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 40px;
+  margin: 30px;
+}
 
-  .average-score {
-    font-size: 4rem;
-    font-weight: bolder;
-    color: hsl(221, 100%, 96%);
-  }
+.average-score {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: hsl(221, 100%, 96%);
+}
 
-  .total-score {
-    color: hsl(241, 100%, 89%);
-    font-weight: bold;
-    opacity: 0.6;
-  }
+.card-left .total-score {
+  color: hsl(241, 100%, 89%);
+  font-weight: bold;
+  opacity: 0.6;
+}
 
-  .result-statement {
-    color: hsl(221, 100%, 96%);
-    font-size: 1.8rem;
-  }
+.result-statement {
+  color: hsl(221, 100%, 96%);
+  font-size: 1.8rem;
+}
 
-  .details {
-    text-align: center;
-    color: hsl(241, 100%, 89%);
-    padding: 15px 20px;
-  }
+.details {
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  padding: 15px 20px;
 }
 
 /* Styles for card-right */
 
 .card-right {
   padding: 30px 40px;
+}
 
-  .title-right {
-    font-size: 1.3rem;
-    align-self: flex-start;
-    color: hsl(224, 30%, 27%);
-  }
+.title-right {
+  font-size: 1.3rem;
+  align-self: flex-start;
+  color: hsl(224, 30%, 27%);
+}
 
-  .score-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 25px 0;
+.score-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 25px 0;
+}
 
-    .reaction-tile {
-      background-color: hsla(0, 100%, 67%, 0.1);
-    }
+.reaction-tile {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
 
-    .memory-tile {
-      background-color: hsla(39, 100%, 56%, 0.1);
-    }
+.memory-tile {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
 
-    .verbal-tile {
-      background-color: hsla(166, 100%, 37%, 0.1);
-    }
+.verbal-tile {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
 
-    .visual-tile {
-      background-color: hsla(234, 85%, 45%, 0.1);
-    }
+.visual-tile {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
 
-    .reaction-tile,
-    .memory-tile,
-    .verbal-tile,
-    .visual-tile {
-      border-radius: 10px;
-      width: inherit;
-      padding: 15px 15px;
-      display: flex;
-      justify-content: space-between;
+.reaction-tile,
+.memory-tile,
+.verbal-tile,
+.visual-tile {
+  border-radius: 10px;
+  width: inherit;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+}
 
-      /* left side of the tiles */
-      .left {
-        display: flex;
-        gap: 0.7rem;
+/* left side of the tiles */
+.left {
+  display: flex;
+  gap: 0.7rem;
+}
 
-        .reaction-title {
-          color: hsl(0, 100%, 67%);
-          font-size: large;
-        }
+.reaction-title {
+  color: hsl(0, 100%, 67%);
+  font-size: large;
+}
 
-        .memory-title {
-          color: hsl(39, 100%, 56%);
-          font-size: large;
-        }
+.memory-title {
+  color: hsl(39, 100%, 56%);
+  font-size: large;
+}
 
-        .verbal-title {
-          color: hsl(166, 100%, 37%);
-          font-size: large;
-        }
+.verbal-title {
+  color: hsl(166, 100%, 37%);
+  font-size: large;
+}
 
-        .visual-title {
-          color: hsl(234, 85%, 45%);
-          font-size: large;
-        }
-      }
-      /* right sie of the tiles */
-      .right {
-        font-size: large;
-        font-weight: bold;
-        .score {
-          color: hsl(224, 30%, 27%);
-        }
-        .total-score {
-          color: hsl(224, 30%, 27%);
-          opacity: 0.6;
-        }
-      }
-    }
-  }
-  .btn-continue {
-    background-color: hsl(224, 30%, 27%);
-    color: hsl(0, 0%, 100%);
-    font-weight: bold;
-    width: 100%;
-    height: 3rem;
-    border: none;
-    border-radius: 50px;
-    margin-top: 20px;
-    transition: background 1s ease;
-  }
+.visual-title {
+  color: hsl(234, 85%, 45%);
+  font-size: large;
+}
 
-  .btn-continue:active {
-    background: linear-gradient(
-      to bottom,
-      hsla(252, 100%, 67%, 1),
-      hsl(241, 81%, 54%)
-    );
-  }
+/* right sie of the tiles */
+.right {
+  font-size: large;
+  font-weight: bold;
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+}
+.card-right .total-score {
+  color: hsl(224, 30%, 27%);
+  opacity: 0.6;
+}
+
+.btn-continue {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: background 1s ease;
+}
+
+.btn-continue:active {
+  background: linear-gradient(
+    to bottom,
+    hsla(252, 100%, 67%, 1),
+    hsl(241, 81%, 54%)
+  );
 }
